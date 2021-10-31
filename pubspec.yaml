@@ -1,6 +1,6 @@
 name: workbook
 description: Do something.
-version: 1.0.0
+version: 0.0.1-pre
 repository: https://github.com/Ronbb/workbook
 
 environment:
