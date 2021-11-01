@@ -1,7 +1,6 @@
-/// Support for doing something awesome.
+/// Workbook annotations.
 ///
-/// More dartdocs go here.
+/// Define your tasks and run them!
 library workbook;
 
 export 'src/annotations.dart';
-

@@ -1,7 +1,5 @@
 import 'package:workbook/workbook.dart';
 
-void main() {}
-
 @task
 void init() {
   print('init');

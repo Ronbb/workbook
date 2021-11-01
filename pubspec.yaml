@@ -1,5 +1,5 @@
 name: workbook
-description: Do something.
+description: Make programs do something automatically with workbook. Write in pure dart.
 version: 0.0.1-pre
 repository: https://github.com/Ronbb/workbook
 
