@@ -1,6 +1,4 @@
----
-title: workbook
----
+# Workbook
 
 Make programs do something automatically with workbook. Write in pure dart.
 
