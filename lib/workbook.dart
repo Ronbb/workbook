@@ -4,3 +4,4 @@
 library workbook;
 
 export 'src/annotations.dart';
+export 'src/arguments.dart';
