@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.2
+
+- Support Future task.
+
 ## 0.0.1-pre+3
 
 - Store arguments from `main`.

@@ -16,14 +16,14 @@ class Workbook {
     return _WorkbookFactory(entry).workbook;
   }
 
-  void run([String? taskName]) {
+  Future<void> run([String? taskName]) {
     final task =
         taskName == null || taskName.isEmpty ? defaultTask : tasks[taskName];
     if (task == null) {
       throw WorkBookTaskNotFound(taskName);
     }
 
-    task.run();
+    return task.run();
   }
 }
 
@@ -122,13 +122,16 @@ class _Task {
 
   String? get description => annotation.description;
 
-  void run() {
+  Future<void> run() async {
     _loadDependencies();
     for (var dep in _dependencies) {
-      dep.run();
+      await dep.run();
     }
 
-    function.call();
+    final result = function.call();
+    if (result is Future) {
+      await result;
+    }
   }
 
   void _loadDependencies() {
@@ -158,7 +161,7 @@ class _Dependency {
 
   _Task task;
 
-  void run() {
-    task.run();
+  Future<void> run() {
+    return task.run();
   }
 }

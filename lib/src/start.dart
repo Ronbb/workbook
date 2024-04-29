@@ -12,7 +12,7 @@ Future<void> start() async {
   );
 
   final workbook = Workbook.fromEntry(entry);
-  workbook.run();
+  await workbook.run();
 
   // final build = entry.getField(Symbol('build'));
   // build.reflectee();
