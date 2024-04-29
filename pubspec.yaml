@@ -1,10 +1,10 @@
 name: workbook
 description: Make programs do something automatically with workbook. Write in pure dart.
-version: 0.0.2
+version: 0.0.3
 repository: https://github.com/Ronbb/workbook
 
 environment:
-  sdk: ">=2.14.3 <3.0.0"
+  sdk: ">=2.14.3 <4.0.0"
 
 dependencies:
   path: ^1.8.0
